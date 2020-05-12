@@ -29,6 +29,13 @@ public class Main {
             aConvertir = sc.nextDouble();
 //            Vider la ligne lue
             sc.nextLine();
+
+//            Convertion
+            if (mode =='1'){
+                convertit = ((9.0/5.0) * aConvertir) + 32.0;
+                System.out.print(aConvertir + "°C correspond à : ");
+                System.out.println(arrondi(convertit, 2) + " °F.");
+            }
         } while (reponse=='o');
 
     }

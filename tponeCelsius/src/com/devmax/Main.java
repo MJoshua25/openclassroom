@@ -19,7 +19,16 @@ public class Main {
                 System.out.println("1 - Convertisseur Celsius - Fahrenheit");
                 System.out.println("2 - Convertisseur Fahrenheit - Celsius ");
                 mode = sc.nextLine().charAt(0);
+
+                if(mode!='1' && mode!='2')
+                    System.out.println("Mode inconnu, veuillez faire un choix valide");
             } while (mode!='1' && mode!='2');
+
+//            Saisie de la température à convertir
+            System.out.println("Température à convertir :");
+            aConvertir = sc.nextDouble();
+//            Vider la ligne lue
+            sc.nextLine();
         } while (reponse=='o');
 
     }

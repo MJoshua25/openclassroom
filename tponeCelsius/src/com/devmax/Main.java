@@ -41,8 +41,16 @@ public class Main {
                 System.out.print(aConvertir + "°F correspond à :");
                 System.out.println(arrondi(convertit, 2) + " °C.");
             }
-        } while (reponse=='o');
+//            Nouvelle convertion
+            do {
+                System.out.println("Souhaitez-vous convertir une autre température ? (O/N)");
+                reponse = sc.nextLine().charAt(0);
+            } while (reponse != 'O' && reponse != 'N');
+        } while (reponse=='O');
 
+        System.out.println("Au revoir !");
+
+        //Fin de programme
     }
     public static double arrondi(double A, int B) {
         return (double) ( (int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);

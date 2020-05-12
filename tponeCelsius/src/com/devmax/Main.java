@@ -36,6 +36,11 @@ public class Main {
                 System.out.print(aConvertir + "°C correspond à : ");
                 System.out.println(arrondi(convertit, 2) + " °F.");
             }
+            else{
+                convertit = ((aConvertir - 32) *5 )/9;
+                System.out.print(aConvertir + "°F correspond à :");
+                System.out.println(arrondi(convertit, 2) + " °C.");
+            }
         } while (reponse=='o');
 
     }
